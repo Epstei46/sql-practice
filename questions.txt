@@ -1,0 +1,23 @@
+-- SQL Practice organized by SME in Bright Paths bootcamp, using http://sqlfiddle.com/#!17/f8d68/840
+
+Q1: Given the structure of orgchart, can a reporting employee have multiple supervisors? Provide your explanation as a comment
+.
+
+
+Q2: Give the count of direct reports for each supervisor by name.
+
+
+
+Q3: List the 2 most senior employees by hire date for each supervisor.  Note:  
+    - List more if tied or only 1 if supervisor has only 1 report.
+    - Provide supervisor's name, employee's name, and hire date.
+    (If unable to list the 2 most senior, can you list the most senior?)
+
+
+
+Q4: Name the leader of the organization.
+
+
+
+Q5: Report each employee's depth in the org chart, where level 1 is the leader, level 2 reports directly to the leader, level 3 reports to 2, etc.
+

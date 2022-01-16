@@ -1,0 +1,30 @@
+create table staff (
+   emp_id  serial primary key,
+   emp_nm  varchar(40) not null,
+   hire_dt date not null default current_date
+);
+
+insert into staff (emp_nm) values 
+ ('Anthony'), ('Bryce'),   ('Charlene'), ('Dave'),
+ ('Edith'),   ('Francis'), ('Gerrardo'), ('Hilda'),
+ ('Ingrid'),  ('Jeff'),    ('Kathleen'), ('Luther'),
+ ('Kristi'),  ('Manny'),   ('Nestor'),   ('Olga')
+;
+
+update staff set hire_dt = '2017-01-23' where emp_id in (1,2,6);
+update staff set hire_dt = '2016-02-29' where emp_id in (4,5,7);
+update staff set hire_dt = '2016-10-10' where emp_id in (3,8,9);
+update staff set hire_dt = '2018-05-05' where emp_id in (11,12);
+
+create table orgchart (
+   reporting_emp_id integer primary key,
+   supervisor_emp_id integer not null
+);
+
+insert into orgchart values  
+  (13, 16), ( 8,  3), ( 3,  2),
+  ( 4, 16), (11,  3), ( 1,  6),
+  ( 7,  3), (16, 12), ( 5,  1),
+  ( 9,  3), ( 2, 12), (14,  1),
+  (15,  1), (12,  6)
+ ; 
